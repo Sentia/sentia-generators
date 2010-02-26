@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "sentia-generators"
-    gem.summary = %Q{TODO: one-line summary of your gem}
+    gem.summary = "A collection of useful Rails generator scripts that we use on our projects"
     gem.description = %Q{TODO: longer description of your gem}
     gem.email = "michael.cindric@sentia.com.au"
     gem.homepage = "http://github.com/Sentia/sentia-generators"
     gem.authors = ["Michael Cindric"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "haml", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
