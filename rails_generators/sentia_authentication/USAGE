@@ -1,0 +1,26 @@
+Description:
+  The sentia_authentication generator sets up authlogic in application with a few options for the following
+    
+  --no_activation
+  --no_password_reset
+  --none
+  
+  The generator takes in 1 of 3 arguments. One to not create code for activation. Another to not create password resets code. Final option is to not 
+  create activation or password_reset features
+  
+Examples:
+    script/generate sentia_authentication
+    
+      Creates authlogic features and activation and password_reset functions
+
+    script/generate sentia_authentication --no_activation
+ 
+      Creates authlogic features and password_reset functions
+ 
+    script/generate sentia_authentication --no_password_reset
+
+      Creates authlogic features and activation functions
+
+    script/generate sentia_authentication --none
+    
+      Creates authlogic features only

@@ -9,10 +9,10 @@ Examples:
     script/generate sentia_layout
  
         Layout: app/views/layouts/application.html.haml
-        Stylesheet: public/stylesheets/sass/application.css
+        Stylesheet: public/stylesheets/sass/application.sass
  
  
-    script/generate nifty_layout admin
+    script/generate sentia_layout admin
  
         Layout: app/views/layouts/admin.html.haml
         Stylesheet: public/stylesheets/sass/admin.sass

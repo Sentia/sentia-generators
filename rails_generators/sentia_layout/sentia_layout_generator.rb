@@ -1,7 +1,11 @@
 class SentiaLayoutGenerator < Rails::Generator::Base
+  attr_accessor :name
+  
   def initialize(runtime_args, runtime_options = {})
     super
-    @name = @args.first || 'application'
+    usage if @args.length != 2
+    
+    @name = @args[0] || 'application'
   end
   
   def manifest
@@ -15,16 +19,16 @@ class SentiaLayoutGenerator < Rails::Generator::Base
   end
   
   def file_name
-    @name.underscore
+    name.underscore
   end
  
   protected
  
-    def add_options!(opt)
-      opt.separator ''
-      opt.separator 'Options:'
-      opt.on("--haml", "Generate HAML for view, and SASS for stylesheet.") { |v| options[:haml] = v }
-    end
+    # def add_options!(opt)
+    #   opt.separator ''
+    #   opt.separator 'Options:'
+    #   opt.on("--haml", "Generate HAML for view, and SASS for stylesheet.") { |v| options[:haml] = v }
+    # end
  
     def banner
       <<-EOS

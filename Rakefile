@@ -10,7 +10,7 @@ begin
     gem.email = "michael.cindric@sentia.com.au"
     gem.homepage = "http://github.com/Sentia/sentia-generators"
     gem.authors = ["Michael Cindric"]
-    gem.add_development_dependency "haml", ">= 0"
+    gem.add_development_dependency "haml", ">= 2.2.9"
     gem.version = "0.0.1"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end

@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Cindric"]
-  s.date = %q{2010-02-26}
+  s.date = %q{2010-03-16}
   s.description = %q{A collectio of generators that we use on our projects. Only supports the way we doing things for example only generates haml views and not erb.}
   s.email = %q{michael.cindric@sentia.com.au}
   s.extra_rdoc_files = [
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
      "script/console",
      "script/destroy",
      "script/generate",
+     "sentia-generators.gemspec",
      "test/helper.rb",
      "test/test_sentia-generators.rb"
   ]
@@ -48,12 +49,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<haml>, [">= 0"])
+      s.add_development_dependency(%q<haml>, [">= 2.2.9"])
     else
-      s.add_dependency(%q<haml>, [">= 0"])
+      s.add_dependency(%q<haml>, [">= 2.2.9"])
     end
   else
-    s.add_dependency(%q<haml>, [">= 0"])
+    s.add_dependency(%q<haml>, [">= 2.2.9"])
   end
 end
 
