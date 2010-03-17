@@ -9,13 +9,19 @@ class SentiaAuthenticationGenerator < Rails::Generator::Base
   end
   
   def manifest
-    # record do |m|
-    #   m.directory 'app/views/layouts'
-    #   m.directory 'public/stylesheets/sass'
-    #   
-    #   m.template "layout.html.haml", "app/views/layouts/#{file_name}.html.haml"
-    #   m.file "stylesheet.sass", "public/stylesheets/sass/#{file_name}.sass"
-    # end
+    record do |m|
+      m.directory 'app/views/users'
+      
+      #User files
+      
+      m.file "users/new.html.haml", "app/views/users/new.html.haml"
+      m.file "users/edit.html.haml", "app/views/users/edit.html.haml"
+      m.file "users/show.html.haml", "app/views/users/show.html.haml"
+      m.file "users/_form.html.haml", "app/views/users/_form.html.haml"
+
+      m.file "controllers/users_controller.rb", "app/controllers/users_controller.rb"
+
+    end
   end
   
   # def file_name
